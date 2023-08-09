@@ -12,7 +12,7 @@ def browser():
 
 def test_yandex_search(browser):
     yandex_main_page = Helper(browser)
-    yandex_main_page.go_to_site()
+    yandex_main_page.go_to_site("https://ya.ru/")
     yandex_main_page.enter_word("Тензор")
     yandex_main_page.find_suggest_menu()
     yandex_main_page.click_on_the_search_button()
